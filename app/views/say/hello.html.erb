@@ -4,3 +4,15 @@
   Time to say
   <%= link_to "Goodbye", say_goodbye_path %>!
 </p>
+
+<p>Addition: what is 1 + 2? Answer: <%= 1 + 2 %></p>
+<p>Concatenation: adding cow + boy equals: <%= "cow" + "boy" %></p>
+<p>The time in one our: <%= 1.hour.from_now.localtime %></p>
+
+<p>A call to the following Ruby method returns a list of all the files in the current directory <b><em>@files = dir.glob('*')</em></b></p>
+<p> Here's an output for files in @files:</p>
+<ul>
+  <% @files.each do |file| %>
+  <li>file name is <%= file %></li>
+  <% end %>
+</ul>
